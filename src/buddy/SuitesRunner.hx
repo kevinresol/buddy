@@ -442,7 +442,7 @@ class SuitesRunner
 							specCompleted(Failed);
 						})
 						.then(function(_) {
-							reportFailure('Timeout after ${buddySuite.timeoutMs} ms', []);
+							reportFailure('${spec.description} Timeout after ${buddySuite.timeoutMs} ms', []);
 							specCompleted(Failed);
 						});
 				}
